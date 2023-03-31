@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    font-family: "comic sans MS", sans-serif;
+}
+.landing-page{
+    background: white url("https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat scroll center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+} 
+.wrapper{
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+}
+.footer-page{
+    background: white url("./assets/images/nh.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 60vh;
+    color: white;
+}
+.footer-wrapper{
+    background-color: rgba(0,0,0,0.7);
+    height: 6 0vh;
+}
+.bg-secondary {
+    background: linear-gradient(20deg,darkslategrey,rgb(243, 7, 106))
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-success{
+    background: linear-gradient(20deg,darkslategrey,green);
+}
+.bg-warning{
+    background: linear-gradient(20deg,darkslategrey,darkorange);
+}
+.bg-danger{
+    background: linear-gradient(20deg,darkslategrey,red);
+}
+.btn-success{
+    background: linear-gradient(20deg,darkslategrey,green);
+}
+.btn-warning{
+    background: linear-gradient(20deg,darkslategrey,darkorange);
+}
+.btn-danger{
+    background: linear-gradient(20deg,darkslategrey,rgb(243, 7, 106));
+}
+
+.bg-teal , .btn-teal {
+    background-color: teal;
+}
+.text-teal {
+    color: #005a66;
 }

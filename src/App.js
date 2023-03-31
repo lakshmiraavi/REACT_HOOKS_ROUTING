@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Navbar from './root/layout/components/navbar/Navbar';
+import {BrowserRouter as Router , Routes , Route }  from 'react-router-dom';
+import Home from './root/layout/components/home/Home';
+import About from './root/layout/components/about/About';
+import EmployeeList from './employees/components/EmployeeList';
+import StockList from './stocks/components/StockList';
+import EmployeeDetails from  './employees/components/EmployeeDetails';
+import StockDetails from './stocks/components/StockDetails';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+let App =()=>{
+
+  
+      return (
+         <React.Fragment>
+           
+           <Router>
+           <Navbar/>
+            <Routes>
+               <Route exact path='/' Component={Home}></Route>
+               <Route exact path='/employees' Component={EmployeeList}></Route>
+               <Route exact path='/employees/:emp_id' Component={EmployeeDetails}></Route>
+               
+               <Route exact path='/stocks' Component={StockList}></Route>
+               <Route exact path='/stocks/:stock_id' Component={StockDetails}></Route>
+               <Route exact path='/about' Component={About}></Route>
+
+
+            </Routes>
+           </Router>
+         </React.Fragment>
+      )
+   }
+   
+
+export default App

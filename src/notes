@@ -1,0 +1,18 @@
+React Routing (react-router-dom)
+---------------------------------
+npm install react-router-dom axios
+
+src
+      -> root
+          -> layout
+              -> navbar
+              -> home
+              -> about
+      -> employees
+          -> employee-list
+          -> employee-details
+      -> stocks 
+          -> stock-list
+          -> stock-details        
+
+React  -> acios

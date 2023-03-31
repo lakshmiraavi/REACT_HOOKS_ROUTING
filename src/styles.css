@@ -1,0 +1,13 @@
+.btn-success{
+    background: linear-gradient(20deg,darkslategrey,green);
+}
+.btn-warning{
+    background: linear-gradient(20deg,darkslategrey,darkorange);
+}
+.btn-danger{
+    background: linear-gradient(20deg,darkslategrey,red);
+}
+
+.table tbody tr td {
+    font-weight: bold;
+}
